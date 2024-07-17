@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+    outline: 0;
+    text-transform: capitalize;
+    transition: .2s ease all;
+    
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: #fff;
+    width: 500px;
+    height: min-content;
+    border-radius: 12px;
+     box-shadow: 0px 2px 6px rgba( 0 0 0 /100%);
+    text-align: center;
+    padding: .3rem;
+}
+
+.input-box{
+    width: 90%;
+    height: 2rem;
+   background: none ;
+   border-bottom: 2px solid #6e6c6c;
+    padding-left: 1rem;
+    font-size: 1.2rem;
+   
+   
+}
+.search-box {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2%;
+    height: 50px;
+}
+
+.search-box #search-btn{
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:none;
+
+}
+.weather-body{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+    
+}
+.weather-body img{
+   width: 40%;
+}
+.weather-box{
+    text-align: center;
+}
+.weather-box  .temperature{
+  font-size: 3rem;
+  font-weight: 800;
+  position: relative;
+}
+.weather-box  .temperature sup{
+    font-size: 1.8rem;
+    font-weight: 600;
+    position: absolute;
+}
+.weather-box .description{
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+.weather-details{
+width: 100%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin-top: 8%;
+padding-inline: 4%;
+}
+.humidity , .wind{
+    display: flex;
+}
+.weather-details i{
+    font-size: 1.8rem;
+    color: #eeea09;
+    margin-right: 3%;
+}
+.text{
+    font-size: 1.7rem;
+}
+
+.text span{
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+@media(max-width:530px){
+    .container{
+        width: 400px;
+      height: 36rem;
+    };
+}
+@media(max-width:430px){
+    .container{
+        width: 350px;
+      height: 36rem;
+    };
+
+}
+
+@media(max-width:360px){
+    .container{
+        width: 90%;
+      height: 26rem;
+     margin-left: 5%;
+     margin-right: 5%;
+    };
+    .weather-details i{
+        font-size: .8rem;
+        color: #eeea09;
+        margin-right: 3%;
+    }
+    .text{
+        font-size: 1.2rem;
+    }
+    
+    .text span{
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
+    .weather-box  temperaturee{
+        font-size: 2rem;
+        font-weight: 800;
+        position: relative;
+      }
+      .weather-details{
+        margin-top: 6%;
+        }
+}
