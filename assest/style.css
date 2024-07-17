@@ -97,7 +97,7 @@ padding-inline: 4%;
 .weather-details i{
     font-size: 1.8rem;
     color: #eeea09;
-    margin-right: 3%;
+    margin-right: 2%;
 }
 .text{
     font-size: 1.7rem;
@@ -107,7 +107,9 @@ padding-inline: 4%;
     font-size: 1.4rem;
     font-weight: 700;
 }
-
+.location-not-found{
+    display: none;
+}
 @media(max-width:530px){
     .container{
         width: 400px;
@@ -122,7 +124,7 @@ padding-inline: 4%;
 
 }
 
-@media(max-width:360px){
+@media(max-width:360px) {
     .container{
         width: 90%;
       height: 26rem;
@@ -142,12 +144,22 @@ padding-inline: 4%;
         font-size: 1.2rem;
         font-weight: 500;
     }
-    .weather-box  temperaturee{
+    .weather-box  .temperature{
         font-size: 2rem;
         font-weight: 800;
         position: relative;
       }
       .weather-details{
-        margin-top: 6%;
+        margin-top: 4%;
+        }
+        .humidity , .wind{
+            display: flex;
+            font-size: 1rem;
+        }
+        .weather-details i{
+            font-size: 1rem;
+            color: #eeea09;
+            margin-right: .5rem;
         }
 }
+
